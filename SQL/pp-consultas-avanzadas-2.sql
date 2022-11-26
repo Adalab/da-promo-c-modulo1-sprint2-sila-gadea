@@ -7,6 +7,7 @@ de entre los mismos (freight) que han sido enviados por cada empleado
 SELECT employee_id, COUNT(order_id), MAX(freight) 
 FROM orders
 GROUP BY employee_id;
+
 /* 2. Descartar pedidos sin fecha y ordénalos:
 Una vez han revisado los datos de la consulta anterior,
 nos han pedido afinar un poco más el "disparo".
@@ -35,6 +36,12 @@ La consulta anterior nos muestra el número de pedidos para cada día concreto,
 pero esto es demasiado detalle. Genera una modificación de la consulta anterior
 para que agrupe los pedidos por cada mes concreto de cada año.*/
 
+
+SELECT COUNT(order_date) AS 'NumeroPedidos', MONTH (order_date) AS 'Mes', YEAR (order_date) AS 'Año'
+FROM orders
+GROUP BY MONTH(order_date);
+
+
 /* 5. Seleccionad las ciudades con 4 o más empleadas:
 Desde recursos humanos nos piden seleccionar los nombres de las ciudades
 con 4 o más empleadas de cara a estudiar la apertura de nuevas oficinas.*/
@@ -48,11 +55,11 @@ HAVING COUNT(employee_id) >= 4;
 Necesitamos una consulta que clasifique los pedidos en dos categorías ("Alto" y "Bajo")
 en función de la cantidad monetaria total que han supuesto: por encima o por debajo de 2000 euros.*/
 
-SELECT    
-CASE   
-    WHEN salario < 2000 THEN "Bajo"   
-    ELSE "Alto"   
-    END AS RangoSalario   
+SELECT
+CASE
+    WHEN salario < 2000 THEN "Bajo"
+    ELSE "Alto"
+    END AS RangoSalario
 FROM empleadas;
 
  
