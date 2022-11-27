@@ -6,7 +6,7 @@ En el presente repositorio se encuentran dos carpetas, correspondientes a los le
   - SQL.  
   
   ## Python
-    Todos los ejercicios están completos. Dentro de esta carpeta, encontramos los ejercicios:  
+  Todos los ejercicios están completos. Dentro de esta carpeta, encontramos los ejercicios:  
       - pp-funciones-intro: Lecciones relacionadas con qué son las funciones, cómo definirlas, y cuál es su propósito.  
       - pp-funciones-2: Ampliación de los conceptos básicos de las funciones.  
       - pp-clases: Definición y creación de clases en Python.
