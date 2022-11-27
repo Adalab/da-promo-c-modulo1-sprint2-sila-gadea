@@ -11,9 +11,10 @@ En el presente repositorio se encuentran dos carpetas, correspondientes a los le
       - pp-funciones-2: Ampliación de los conceptos básicos de las funciones.  
       - pp-clases: Definición y creación de clases en Python.
       - pp-gestion-de-ficheros: Lectura y manipulación de ficheros .txt y .xml  
-            A notar: En el bloque de código [16] archivo 'pp-python+sql-1.ipynb', aparece el error en'import pandas' por lo que no permite ejecutar el código. Sin embargo, ejecutado desde un VSC que permita importar pandas el código debería funcionar perfectamente.  
+            
        - pp-expresiones-regulares-regex: Técnicas para buscar ciertas palabras o caracteres en strings mediante RegExr.  
-       - pp-python+sql-1: Conectar BBDD usando Python y realizar consultas básicas con SQL.
+       - pp-python+sql-1: Conectar BBDD usando Python y realizar consultas básicas con SQL.  
+              A notar: En el bloque de código [16] archivo 'pp-python+sql-1.ipynb', aparece el error en'import pandas' por lo que no permite ejecutar el código. Sin  embargo, ejecutado desde un VSC que permita importar pandas el código debería funcionar perfectamente.  
        - pp-python+sql-2: Continuación del ejercicio anterior, aprendiendo a crear tablas, y modificarlas: INSERT, UPDATE, DELETE, usando Python.
        
    ## SQL
